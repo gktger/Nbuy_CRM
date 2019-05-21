@@ -1,0 +1,10 @@
+﻿@using CRM.Entity
+@model Employee
+
+
+@using (Html.BeginForm("Login","Employee",FormMethod.Post))
+{
+    @Html.TextBoxFor(x => x.Email, new { @class = "form-control", placeholder = "Email" })
+    @Html.TextBoxFor(x => x.Password, new { @class = "form-control", placeholder = "Password" })
+    <input type="submit" value="Giriş Yap" class="btn btn-success" />
+}
